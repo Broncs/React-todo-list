@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import { BookContext } from "../contexts/BookContext";
+import { AiOutlinePlus } from "react-icons/ai";
 
 const Bookform = () => {
   const { dispatch } = useContext(BookContext);
@@ -22,19 +23,21 @@ const Bookform = () => {
     <form onSubmit={handleSubmit}>
       <input
         type="text"
-        placeholder="book title"
+        placeholder="Titulo do livro"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
         required
       />
       <input
         type="text"
-        placeholder="Author"
+        placeholder="Autor"
         value={author}
         onChange={(e) => setAuthor(e.target.value)}
         required
       />
-      <input type="submit" value="add book" />
+      <button className="icon" type="submit">
+        <AiOutlinePlus className="i" />
+      </button>
     </form>
   );
 };

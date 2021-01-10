@@ -5,20 +5,20 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #553055;
+  background: #e3fdfd;
 }
 
 .App {
-  background: #4c2a4c;
+  background: #a6e3e9;
   margin: 20px auto;
   width: 90%;
   max-width: 700px;
-  color: #eee;
+  color: #393e46;
 }
 .navbar {
   padding: 10px 20px;
   text-align: center;
-  background: #6d3d6d;
+  background: #71c9ce;
 }
 .navbar h1 {
   margin: 10px 0;
@@ -32,7 +32,7 @@ body {
   list-style-type: none;
 }
 .book-list li {
-  background: #6d3d6d;
+  background: #cbf1f5;
   border-radius: 4px;
   padding: 10px;
   cursor: pointer;
@@ -44,12 +44,12 @@ body {
 }
 .book-list .title {
   font-weight: bold;
-  color: #fff;
+  color: #333;
   font-size: 1.2em;
 }
 .book-list .author {
   font-size: 0.9em;
-  color: #ddd;
+  color: #333;
 }
 .empty {
   margin: 20px;
@@ -64,14 +64,22 @@ input[type="text"] {
   padding: 10px;
   box-sizing: border-box;
   margin: 6px 0;
-  background: #3c1f3c;
-  color: #fff;
+  background: #cbf1f5;
+  color: #333;
   border: 0;
 }
-input[type="submit"] {
-  margin: 10px auto;
-  background: #eee;
-  border: 0;
-  padding: 6px 20px;
+
+.icon {
+  cursor: pointer;
   display: block;
+  margin: 10px auto;
+  border-radius: 50%;
+  border: 2px solid #71c9ce;
+  background: #71c9ce;
+  outline: none;
+}
+.icon {
+  font-size: 30px;
+  color: #cbf1f5;
+  padding-top: 5px;
 }
